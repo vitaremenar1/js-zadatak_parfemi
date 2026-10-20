@@ -65,9 +65,9 @@ function render(items) {
 }
 
 const m = parfumes
-    .filter(parfume => parfumes.category === "muškarci")
+    .filter(parfume => parfume.category === "muškarci")
     .sort((a, b) => a.name.localeCompare(b.name));
 
-render(parfumes);
-//render(m);
+//render(parfumes);
+render(m);
 loading.remove
